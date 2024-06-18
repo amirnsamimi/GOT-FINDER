@@ -2,21 +2,19 @@ main {
   display: grid;
   height: 1200px;
   gap: 10px;
-  grid-template-rows: repeat(12, 1fr);
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-areas:
-    ". . . . . . . . . . . ."
-    "a a a a b b b b c c c c"
-    "a a a a b b b b c c c c"
-    "d d e e f f f f c c c c"
-    "d d e e f f f f c c c c"
-    "d d e e f f f f h h h h"
-    "g g g g f f f f h h h h"
-    "g g g g f f f f h h h h"
-    "g g g g f f f f h h h h"
-    "i i i j j k k k l l l l"
-    "i i i j j k k k l l l l"
-    ". . . . . . . . . . . .";
+  grid-template:
+    ". . . . . . . . . . . ." 1fr
+    "a a a a b b b b c c c c" 1fr
+    "a a a a b b b b c c c c" 1fr
+    "d d e e f f f f c c c c" 1fr
+    "d d e e f f f f c c c c" 1fr
+    "d d e e f f f f h h h h" 1fr
+    "g g g g f f f f h h h h" 1fr
+    "g g g g f f f f h h h h" 1fr
+    "g g g g f f f f h h h h" 1fr
+    "i i i j j k k k l l l l" 1fr
+    "i i i j j k k k l l l l" 1fr
+    ". . . . . . . . . . . ." 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 main > div {
