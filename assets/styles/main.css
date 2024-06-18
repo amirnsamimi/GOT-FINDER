@@ -1,0 +1,82 @@
+main {
+  display: grid;
+  height: 1200px;
+  gap: 10px;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    ". . . . . . . . . . . ."
+    "a a a a b b b b c c c c"
+    "a a a a b b b b c c c c"
+    "d d e e f f f f c c c c"
+    "d d e e f f f f c c c c"
+    "d d e e f f f f h h h h"
+    "g g g g f f f f h h h h"
+    "g g g g f f f f h h h h"
+    "g g g g f f f f h h h h"
+    "i i i j j k k k l l l l"
+    "i i i j j k k k l l l l"
+    ". . . . . . . . . . . .";
+}
+
+main > div {
+  border-radius: 10px;
+}
+
+.item-1 {
+  background: pink;
+  grid-area: a;
+}
+
+.item-2 {
+  background: blue;
+  grid-area: b;
+}
+
+.item-3 {
+  background: green;
+  grid-area: c;
+}
+
+.item-4 {
+  background: red;
+  grid-area: d;
+}
+
+.item-5 {
+  background: blueviolet;
+  grid-area: e;
+}
+
+.item-6 {
+  background: yellow;
+  grid-area: f;
+}
+
+.item-7 {
+  background: saddlebrown;
+  grid-area: g;
+}
+
+.item-8 {
+  background: orange;
+  grid-area: h;
+}
+
+.item-9 {
+  background: black;
+  grid-area: i;
+}
+
+.item-10 {
+  background: darkcyan;
+  grid-area: j;
+}
+.item-11 {
+  background: darkolivegreen;
+  grid-area: k;
+}
+.item-12 {
+  background: darkgrey;
+  grid-area: l;
+}
