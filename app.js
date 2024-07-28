@@ -143,7 +143,7 @@ const books = async (id = 2) => {
     item10.style.boxShadow = "2px 2px 0px black";
     item10.innerHTML = `<div> <h4> House: </h4>  ${id}   </div>`;
 
-    console.log(data);
+
 
     if (data.seats.length > 0) {
       item8.style.background = "white";
@@ -274,6 +274,7 @@ const books = async (id = 2) => {
       alert("no data available for this book");
     }
   } else if (response.status == 404) {
+    bookNo.removeAttribute("disabled");
     item6.innerHTML =
       "<div class='notFound'> <div> The House has not been yet built. Search for another one or if you want to invest contact us. </div>  <div> NOT FOUND 404 </div> </div>";
     item6.style.border = "1px solid rgb(107, 28, 28)";
